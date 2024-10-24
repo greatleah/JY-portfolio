@@ -1,6 +1,3 @@
-# JY-portfolio
-# Python script to create a portfolio page in HTML
-
 html_content = """
 <!DOCTYPE html>
 <html lang="en">
@@ -9,20 +6,58 @@ html_content = """
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Park Jooyeon - Portfolio</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f4f4f4; }
-        .container { max-width: 800px; margin: auto; background: #fff; padding: 20px; border-radius: 8px; }
-        h1, h2 { color: #333; }
-        h1 { font-size: 2em; }
-        h2 { font-size: 1.5em; margin-top: 20px; }
-        p, ul { color: #555; }
-        ul { list-style-type: none; padding: 0; }
-        li { margin-bottom: 10px; }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333333;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #dddddd;
+            padding-bottom: 5px;
+        }
+        p, ul {
+            color: #555555;
+            line-height: 1.6;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Park Jooyeon</h1>
-        <p>Email: jooyeon.park@u.nus.edu | Phone: +65 8044 3091 | <a href="https://www.linkedin.com">LinkedIn</a></p>
+        <p>Email: jooyeon.park@u.nus.edu | Phone: +65 8044 3091 | <a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
         
         <h2>Education</h2>
         <ul>
@@ -69,8 +104,7 @@ html_content = """
 """
 
 # Save the HTML content to a file
-with open("portfolio.html", "w") as file:
+with open("enhanced_portfolio.html", "w") as file:
     file.write(html_content)
 
-print("Portfolio page created successfully. Upload 'portfolio.html' to your GitHub repository.")
-
+print("Enhanced portfolio page created successfully. Upload 'enhanced_portfolio.html' to your GitHub repository.")
